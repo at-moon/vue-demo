@@ -3,7 +3,7 @@ import request from '@/utils/request'
 /* 菜单树查询 */
 export function getMenuTree () {
   return request({
-    url: '/sys-menu/tree',
+    url: '/sysMenu/tree',
     method: 'get'
   })
 }
@@ -11,7 +11,7 @@ export function getMenuTree () {
 /* 子菜单查询 */
 export function getChildrenMenu (params) {
   return request({
-    url: '/sys-menu/getChildren?parentId=' + params,
+    url: '/sysMenu/getChildren?parentId=' + params,
     method: 'get'
   })
 }
